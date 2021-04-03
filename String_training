@@ -1,0 +1,18 @@
+import java.util.Scanner;
+// Let's meet in my office at 10
+public class MP03 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String line = sc.nextLine();
+        String s1 = sc.nextLine(); // meet
+        String s2 = sc.nextLine(); // buy
+        int n1 = line.indexOf(s1);
+        String sn1 = line.substring(0, n1);
+        String sn2 = line.substring(n1 + s1.length(), line.length());
+//        System.out.println(sn1);
+//        System.out.println(sn2);
+        String newString = sn1 + s2 + sn2;
+        System.out.println(newString);
+    }
+}
